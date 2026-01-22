@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f6f8;
+}
+
+.bank-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+/* Balance display using Flexbox */
+.balance-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #e6f2ff;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.transaction-box input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 500px) {
+    .bank-container {
+        margin: 20px;
+    }
+
+    .balance-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
